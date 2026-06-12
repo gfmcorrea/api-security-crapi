@@ -1,0 +1,11 @@
+NAME                          IMAGE                          COMMAND                  SERVICE                       CREATED              STATUS                            PORTS
+api.mypremiumdealership.com   crapi/gateway-service:latest   "/app/server"            api.mypremiumdealership.com   About a minute ago   Up About a minute (healthy)       443/tcp
+chromadb                      chromadb/chroma:latest         "dumb-init -- chroma…"   chromadb                      About a minute ago   Up About a minute (healthy)       8000/tcp
+crapi-chatbot                 crapi/crapi-chatbot:latest     "/bin/sh -c /app/ent…"   crapi-chatbot                 About a minute ago   Up 58 seconds                     5002/tcp, 5500/tcp
+crapi-community               crapi/crapi-community:latest   "/bin/sh -c /app/main"   crapi-community               About a minute ago   Up 58 seconds (healthy)           6060/tcp
+crapi-identity                crapi/crapi-identity:latest    "/__cacert_entrypoin…"   crapi-identity                About a minute ago   Up About a minute (healthy)       8080/tcp, 8989/tcp, 10001/tcp
+crapi-web                     crapi/crapi-web:latest         "/etc/nginx/nginx-wr…"   crapi-web                     About a minute ago   Up 7 seconds (health: starting)   127.0.0.1:8888->80/tcp, 127.0.0.1:30080->80/tcp, 127.0.0.1:8443->443/tcp, 127.0.0.1:30443->443/tcp
+crapi-workshop                crapi/crapi-workshop:latest    "/app/runner.sh"         crapi-workshop                About a minute ago   Up 42 seconds (healthy)           
+mailhog                       crapi/mailhog:latest           "MailHog"                mailhog                       About a minute ago   Up About a minute (healthy)       1025/tcp, 127.0.0.1:8025->8025/tcp
+mongodb                       mongo:4.4                      "docker-entrypoint.s…"   mongodb                       About a minute ago   Up About a minute (healthy)       27017/tcp
+postgresdb                    postgres:14                    "docker-entrypoint.s…"   postgresdb                    About a minute ago   Up About a minute (healthy)       5432/tcp

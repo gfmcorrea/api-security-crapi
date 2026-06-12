@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Server: openresty/1.27.1.2
+Date: Fri, 12 Jun 2026 19:24:11 GMT
+Content-Type: text/html
+Content-Length: 1207
+Last-Modified: Mon, 22 Sep 2025 18:05:09 GMT
+Connection: keep-alive
+ETag: "68d18fd5-4b7"
+Accept-Ranges: bytes
+

@@ -1,0 +1,58 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Secrets and tokens
+*token*
+*secret*
+*password*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Burp Suite project files
+*.burp
+*.burp2
+*.state
+
+# Postman local exports with possible secrets
+postman_environment*.json
+PostmanEnvironment*.json
+
+# Large local lab folders
+crAPI-main/
+crapi/
+OWASP-crAPI/
+
+# Docker local files
+docker-compose.override.yml
+
+# Browser downloads
+Downloads/

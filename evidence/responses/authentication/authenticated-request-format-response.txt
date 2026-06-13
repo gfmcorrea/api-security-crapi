@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Server: openresty/1.27.1.2
+Date: Sat, 13 Jun 2026 00:04:06 GMT
+Content-Type: application/json
+Connection: keep-alive
+Allow: GET, POST, PUT, HEAD, OPTIONS
+Vary: origin, Cookie
+access-control-allow-origin: *
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Content-Length: 59
+
+{"id":7,"message":"Order sent successfully.","credit":80.0}

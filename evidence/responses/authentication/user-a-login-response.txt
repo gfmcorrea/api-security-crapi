@@ -1,0 +1,19 @@
+HTTP/1.1 200 
+Server: openresty/1.27.1.2
+Date: Fri, 12 Jun 2026 23:50:53 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Length: 552
+
+{"token":"[REDACTED_TOKEN]","type":"Bearer","message":"Login successful","mfaRequired":false}

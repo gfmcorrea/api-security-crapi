@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: openresty/1.27.1.2
+Date: Sat, 13 Jun 2026 15:51:02 GMT
+Content-Type: application/json
+Connection: keep-alive
+Allow: GET, POST, PUT, HEAD, OPTIONS
+Vary: origin, Cookie
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Content-Length: 561
+
+{"order":{"id":15,"user":{"email":"gabriel.usera@crapi.local","number":"11999990001"},"product":{"id":2,"name":"Wheel","price":"10.00","image_url":"images/wheel.svg"},"quantity":1,"status":"delivered","transaction_id":"dd1776af-2f48-4951-example089f1f3","created_on":"2026-06-13T15:03:37.321839"},"payment":{"transaction_id":"dd1776af-2f48-4951-EXAMPLE089f1f3","order_id":15,"amount":10,"paid_on":"2026-06-13T15:03:37.321839","card_number":"XXXXXXXXXXXX1632","card_owner_name":"Gabriel User A","card_type":"Visa","card_expiry":"11/2030","currency":"USD"}}

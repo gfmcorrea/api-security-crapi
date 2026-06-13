@@ -274,6 +274,106 @@ Recommended actions:
 * Log unauthorized access attempts to order objects.
 * Review other endpoints that use direct object IDs.
 
+## Additional Validation
+
+A second BOLA validation was performed using a newer order flow.
+
+Baseline:
+
+```text
+User B accessed User B's own order ID 16.
+```
+
+Modified test:
+
+```text
+User B changed the order ID from 16 to 15.
+```
+
+Expected secure behavior:
+
+```text
+The API should block User B from accessing order ID 15 because the order belongs to User A.
+```
+
+Observed behavior:
+
+```text
+The API returned HTTP 200 OK and exposed User A's order and payment-related metadata to User B.
+```
+
+Baseline User B response:
+
+```json
+{
+  "order": {
+    "id": 16,
+    "user": {
+      "email": "gabriel.userb@crapi.local",
+      "number": "11999990002"
+    },
+    "product": {
+      "id": 2,
+      "name": "Wheel",
+      "price": "10.00"
+    },
+    "quantity": 1,
+    "status": "delivered"
+  },
+  "payment": {
+    "order_id": 16,
+    "amount": 10,
+    "card_number": "XXXXXXXXXXXX4902",
+    "card_owner_name": "Gabriel User B",
+    "card_type": "Visa",
+    "card_expiry": "06/2027",
+    "currency": "USD"
+  }
+}
+```
+
+Modified User B response accessing User A order:
+
+```json
+{
+  "order": {
+    "id": 15,
+    "user": {
+      "email": "gabriel.usera@crapi.local",
+      "number": "11999990001"
+    },
+    "product": {
+      "id": 2,
+      "name": "Wheel",
+      "price": "10.00"
+    },
+    "quantity": 1,
+    "status": "delivered"
+  },
+  "payment": {
+    "order_id": 15,
+    "amount": 10,
+    "card_number": "XXXXXXXXXXXX1632",
+    "card_owner_name": "Gabriel User A",
+    "card_type": "Visa",
+    "card_expiry": "11/2030",
+    "currency": "USD"
+  }
+}
+```
+
+Additional evidence:
+
+```text
+Baseline request: evidence/requests/bola/get-order-16-user-b-baseline-request.txt
+Baseline response: evidence/responses/bola/get-order-16-user-b-baseline-response.txt
+Modified request: evidence/requests/bola/get-order-15-user-b-modified-request.txt
+Modified response: evidence/responses/bola/get-order-15-user-b-modified-response.txt
+Screenshot: evidence/screenshots/bola/get-order-15-user-b-modified.png
+```
+
+
+
 ## Evidence
 
 Baseline request:

@@ -1,0 +1,15 @@
+GET /workshop/api/shop/orders/16 HTTP/1.1
+Host: localhost:8888
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Referer: http://localhost:8888/orders?order_id=16
+Content-Type: application/json
+Authorization: Bearer [REDACTED_TOKEN]
+Connection: keep-alive
+Cookie: [REDACTED_COOKIE]language=en; cookieconsent_status=dismiss; welcomebanner_status=dismiss; continueCode=obBEXAMPLEpALxBjPWE9m87zRNqxON2; chat_session_id=c8033f45-1dEXAMPLE65c9c6bcdf
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0

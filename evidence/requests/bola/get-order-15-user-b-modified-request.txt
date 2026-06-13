@@ -8,7 +8,7 @@ Referer: http://localhost:8888/orders?order_id=16
 Content-Type: application/json
 Authorization: Bearer [REDACTED_TOKEN]
 Connection: keep-alive
-Cookie: [REDACTED_COOKIE]language=en; cookieconsent_status=dismiss; welcomebanner_status=dismiss; continueCode=obBEXAMPLEpALxBjPWE9m87zRNqxON2; chat_session_id=c8033f45-1dEXAMPLE65c9c6bcdf
+Cookie: [REDACTED_COOKIE]
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin

@@ -9,7 +9,7 @@ Content-Type: application/json
 Content-Length: 63
 Origin: http://localhost:8888
 Connection: keep-alive
-Cookie: language=en; cookieconsent_status=dismiss; welcomebanner_status=dismiss; continueCode=obBk1O1YovX2pJw6Z5VrbleQgnk0rOSYpALxBjPWDKyM3a4E9m87zRNqxON2; chat_session_id=bbdf5d13-de08-4ef6-8d35-105d45fa126d
+Cookie: [REDACTED_COOKIE]
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin

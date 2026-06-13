@@ -1,0 +1,87 @@
+.
+├── api-recon
+│   ├── api-routes-observed.md
+│   ├── authentication-flow.md
+│   ├── technologies-identified.md
+│   └── user-roles-and-test-accounts.md
+├── appendices
+│   ├── api-payloads-used.md
+│   ├── commands-used.md
+│   ├── evidence-checklist.md
+│   └── postman-collection-notes.md
+├── CAREER-MATERIAL.md
+├── docs
+│   ├── api-testing-workflow.md
+│   └── environment-setup.md
+├── endpoint-inventory
+│   ├── admin-or-sensitive-endpoints.md
+│   ├── auth-endpoints.md
+│   ├── endpoint-inventory.md
+│   ├── shop-endpoints.md
+│   └── vehicle-endpoints.md
+├── evidence
+│   ├── requests
+│   │   ├── authentication
+│   │   ├── bfla
+│   │   ├── bola
+│   │   ├── broken-authentication
+│   │   ├── business-logic
+│   │   ├── excessive-data-exposure
+│   │   └── mass-assignment
+│   ├── responses
+│   │   ├── authentication
+│   │   ├── bfla
+│   │   ├── bola
+│   │   ├── broken-authentication
+│   │   ├── business-logic
+│   │   ├── excessive-data-exposure
+│   │   └── mass-assignment
+│   ├── screenshots
+│   │   ├── authentication
+│   │   ├── bfla
+│   │   ├── bola
+│   │   ├── broken-authentication
+│   │   ├── business-logic
+│   │   ├── environment
+│   │   ├── excessive-data-exposure
+│   │   ├── mass-assignment
+│   │   └── reconnaissance
+│   └── tool-outputs
+│       ├── crapi-docker-directory-listing.txt
+│       ├── crapi-docker-path.txt
+│       ├── crapi-download-output.txt
+│       ├── crapi-lab-directory-listing.txt
+│       ├── crapi-unzip-output.txt
+│       ├── crapi-zip-file-info.txt
+│       ├── curl-localhost-8025.txt
+│       ├── curl-localhost-8888.txt
+│       ├── docker-compose-ps.txt
+│       ├── docker-compose-pull.txt
+│       ├── docker-compose-up.txt
+│       ├── docker-compose-version.txt
+│       ├── docker-version.txt
+│       ├── final-repository-tree.txt
+│       ├── nmap-local-services.txt
+│       └── observed-api-routes.txt
+├── findings
+│   ├── 01-broken-object-level-authorization.md
+│   ├── 02-broken-authentication.md
+│   ├── 03-excessive-data-exposure.md
+│   ├── 04-broken-function-level-authorization.md
+│   ├── 05-mass-assignment.md
+│   └── 06-rate-limit-or-business-logic-observation.md
+├── lessons-learned
+│   ├── lessons-learned.md
+│   └── skills-demonstrated.md
+├── methodology
+│   └── api-security-methodology.md
+├── README.md
+├── remediation
+│   └── remediation-summary.md
+├── reports
+│   └── final-report.md
+└── scope
+    ├── rules-of-engagement.md
+    └── scope.md
+
+39 directories, 46 files

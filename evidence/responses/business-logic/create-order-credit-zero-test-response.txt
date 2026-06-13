@@ -1,0 +1,15 @@
+HTTP/1.1 400 Bad Request
+Server: openresty/1.27.1.2
+Date: Sat, 13 Jun 2026 15:05:54 GMT
+Content-Type: application/json
+Connection: keep-alive
+Allow: GET, POST, PUT, HEAD, OPTIONS
+Vary: origin, Cookie
+access-control-allow-origin: *
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Content-Length: 77
+
+{"message":"Insufficient Balance. Please apply coupons to get more balance!"}
